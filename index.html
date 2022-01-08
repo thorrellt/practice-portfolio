@@ -4,46 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>-- PortFolio Website</title>
-    <script src="https://kit.fontawesome.com/1935d064dd.js" crossorigin="anonymous"></script>
+    <<script src="https://kit.fontawesome.com/dbf03981dd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="media-query.css">
 </head>
 <body>
-    <div class="sll">
+    <div class="all">
         <header>
             <div class="container">
                 <nav>
                     <ul class="nav-ul">
                         <li class="nav-li active">
                             <i class = "fas fa-user"></i>
-                            <a href="#about" class="link">About</a>
+                            <a href="#about" 
+                            class="link"
+                            data-filter="content-about">About</a>
                         </li>
                         <li class="nav-li active">
                             <i class = "fas fa-poll-h"></i>
-                            <a href="#resume" class="link">Resume</a>
+                            <a href="#resume" 
+                            class="link"
+                            data-filter="content-resume">Resume</a>
                         </li>
                         <li class="nav-li active">
                             <i class = "fas fa-pencil-alt"></i>
-                            <a href="#portfolio" class="link">Portfolio</a>
+                            <a href="#portfolio" 
+                            class="link"
+                            data-filter="content-portfolio">Portfolio</a>
                         </li>
                         <li class="nav-li active">
-                            <i class = "fas fa-stack-exchange"></i>
-                            <a href="#blog" class="link">Blog</a>
+                            <i class="fab fa-stack-exchange"></i>
+                            <a href="#blog" 
+                            class="link"
+                            data-filter="content-blog">Blog</a>
                         </li>
                         <li class="nav-li active">
                             <i class = "fas fa-envelope"></i>
-                            <a href="#contact" class="link">Contact</a>
+                            <a href="#contact" 
+                            class="link"
+                            data-filter="content-contact">Contact</a>
                         </li>
                     </ul>
                 </nav>
             </div>
-
-
         </header>
 
         <!-- CONTENT SECTION -->
         <section>
+            <div class="container main-container">
+                <!-- PROFILE SECTION -->
+                <div class="profile">
+                    <div class="profile-image">
+                        <img src="images/profile2.jpg" alt="Thorrell's Picture">
+                    </div>
+                    <div class="profile-content">
+                        <h2>Thorrell T</h2>
+                        <p class="text-effect"></p>
+                        <div class="profile-icons">
+                            <a href="a">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="a">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="a">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="a">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="profile-cta my-border">
+                        <div>
+                            <a href="#">GitHub</a>
+                            <a href="#">Contact Me</a>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- CONTENT SECTION -->
+                <div class="content-all">
+                    <!-- CONTENT ABOUT -->
+                    <div class="content content-about" id ="about">
+                        <div class="content-header">
+                            <h2><span>About</span>Me</h2>
+                        </div>
+                        <div class="content-details">
+                            <img src="images/profile-small.jpg" 
+                            alt="profile picture">
+                            <p><span class ="text">Hello! I'm</span>
+                            <span class="name">Thorrell T</span>
+                            <br>
+                            Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt 
+                            ut labore et dolore magna aliqua. 
+                        </div>
+                    </div>
+
+                </div>
+            </div>
 
         </section>
 
