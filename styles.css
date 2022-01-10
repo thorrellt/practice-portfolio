@@ -50,4 +50,106 @@ img {
 }
 
 /* CUSTOM CSS  */
+.all{
+    width: 90%;
+    max-width: 110rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* NAV BAR */
+nav{
+    background-color: #fff;
+    margin: 2rem 1rem 0 0;
+    border-radius: 3px;
+}
+
+nav ul{
+    list-style: none;
+    width: 7rem;
+}
+
+nav ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+nav ul li:not(:last-child){
+    border-bottom:1px solid #eee;
+}
+
+nav li i {
+    font-size: 1.6rem;
+    color: var(--black);
+    padding-bottom: 5px;
+}
+
+nav li a {
+    font-size: 1.2 rem;
+    text-decoration: none;
+    font-weight: 600;
+    color: var (--black);
+}
+
+nav li a:hover{
+    color: var(--color-primary);
+
+}
+
+.active > * {
+    color: var(--color-primary);
+}
+
+/* SECTION STYLES */
+.main-container {
+    display: flex;
+}
+
+.profile {
+    width: 30%;
+    min-width: 40rem;
+    height: 80vh;
+    border-radius: 3px;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.profile .profile-image img {
+    width: 100%;
+}
+
+.profile-content {
+    margin-top: 3rem;
+    text-align: center;
+    width: 100%;
+}
+
+.profile-content h2 {
+    font-size: 4rem;
+    font-weight: 500;
+    color: var(--black);
+}
+
+profile-content p.text-effect {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    padding-bottom: 3rem;
+}
+
+span.effect {
+    border-right: 8px;
+    animation: caret;
+}
+
+@keyframes caret {
+    50% {
+        border-color: transparent;
+    }
+}
 
