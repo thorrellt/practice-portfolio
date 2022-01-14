@@ -18,6 +18,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
     font-size: 62.5%;
 }
@@ -32,8 +33,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
+
 
 p {
     font-size: 1.6rem;
@@ -97,16 +98,18 @@ nav li a {
 
 nav li a:hover{
     color: var(--color-primary);
-
 }
 
 .active > * {
     color: var(--color-primary);
 }
 
+
+
 /* SECTION STYLES */
 .main-container {
     display: flex;
+    
 }
 
 .profile {
@@ -158,6 +161,7 @@ span.effect {
     margin: 5px;
     color: var(--black);
     text-decoration: none;
+    transition: all .3s;
 }
 
 .profile-icons a:hover {
@@ -187,3 +191,62 @@ span.effect {
     color: var(--color-primary);
 }
 
+
+
+/* CONTENT STYLES */
+.content-all {
+    position: relative;
+    margin: auto 0;
+    overflow: hidden;
+}
+
+.content {
+    width: 100%;
+    background-color: #f5f4f2;
+    padding: 1.5rem;
+    height: 75vh;
+    border: 1px solid transparent;
+    border-radius: 0 3px 0 3px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    display:none;
+    position:relative;
+    animation: slide-right 1s ease 1;
+}
+
+.content::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6rem;
+    width:100%;
+    height: 1px;
+    background-color: rgba(0,0,0,.2);
+}
+
+.content-about {
+    display: block;
+}
+
+.content::-webkit-scrollbar {
+    height: 5px;
+    width: 4px;
+    border: 1px solid #d5d5d5;
+    background: #d5d5d5;
+}
+
+.content::-webkit-scrollbar-track {
+    background-color: var(--color-primary);
+    outline: 1px solid #eee;
+}
+
+/* SLIDE OUT ABOUT ME ANIMATION */
+@keyframes slide-out {
+    0% {
+        transform: translate(-50%);
+    }
+    100% {
+        transform: translate(0);
+    }
+    
+}
