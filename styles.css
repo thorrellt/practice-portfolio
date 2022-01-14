@@ -153,3 +153,37 @@ span.effect {
     }
 }
 
+.profile-icons a{
+    font-size: 2rem;
+    margin: 5px;
+    color: var(--black);
+    text-decoration: none;
+}
+
+.profile-icons a:hover {
+    color: var(--color-primary);
+}
+
+.profile-cta {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid rgba(0,0,0,.2);
+    padding: 2rem;
+}
+
+.profile-cta a {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color:var(--black);
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.profile-cta a:hover {
+    color: var(--color-primary);
+}
+
