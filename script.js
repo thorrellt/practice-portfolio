@@ -9,3 +9,28 @@ for(let i = 0; i < navLi.length; i++){
         this.className += " active"; // add active status to element that was clicked
     });
 }
+
+//slide the content section on link click
+let links = document.querySelectorAll(".link");
+let allContent = document.querySelectorAll(".content");
+
+
+for (let i = 0; i < links.length; i++) {
+    links[i].addEventListener("click", (e) => {
+        e.preventDefault();
+
+        const filter = e.target.dataset.filter;
+        console.log(filter);
+
+        allContent.forEach((content) => {
+        if (filter === "content") {
+            content.style.display = "block"
+        } else if (content.classList.contains(filter)) {
+            content.style.display = "block"
+        } else {
+            content.style.display = "none"
+        }
+
+        })
+    });
+}
