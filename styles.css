@@ -336,3 +336,13 @@ span.effect {
     color: #fff;
     font-weight: 300;
 }
+
+.content-about .content-details p span.text {
+    font-size: 1.8rem;
+}
+
+.content-about .content-details p span.name {
+    color: var(--orange);
+    font-size: 2rem;
+    font-weight: 700;
+}
