@@ -224,7 +224,7 @@ span.effect {
     background-color: rgba(0,0,0,.2);
 }
 
-.content-resume {
+.content-portfolio {
     display: block;
 }
 
@@ -241,7 +241,7 @@ span.effect {
 }
 
 /* SLIDE OUT ABOUT ME ANIMATION */
-@keyframes slide-out {
+@keyframes slide-right {
     0% {
         transform: translate(-50%);
     }
@@ -410,4 +410,10 @@ span.effect {
 .skill:hover {
     transform: translateY(-5px);
     background-color: rgba(0,0,0,.2);
+}
+
+.skill p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--very-dark);
 }
