@@ -1,43 +1,61 @@
-// add active nav class on link switch
+// ADD ACTIVE CLASS TO LINK ON CLICK
 const navUL = document.getElementById("nav-ul");
-const navLi = document.getElementsByClassName("nav-li");
+const navLi = navUL.getElementsByClassName("nav-li");
 
-for(let i = 0; i < navLi.length; i++){
-    navLi[i].addEventListener("click", function() { //find element that was clicked
-        const current = document.getElementsByClassName("active"); //find class with active in it
-        current[0].className = current[0].className.replace(" active", ""); //delete that active
-        this.className += " active"; // add active status to element that was clicked
+for (let i = 0; i < navLi.length; i++) {
+    navLi[i].addEventListener("click", function () {
+        const current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
     });
 }
 
-//slide the content section on link click
+// SLIDE THE CONTENT SECTION ON LINK CLICK
 let links = document.querySelectorAll(".link");
 let allContent = document.querySelectorAll(".content");
 
+if (window.innerWidth > 850) {
+    for (let i = 0; i < links.length; i++) {
+        links[i].addEventListener("click", (e) => {
+            e.preventDefault();
 
-for (let i = 0; i < links.length; i++) {
-    links[i].addEventListener("click", (e) => {
+            const filter = e.target.dataset.filter;
+            console.log(filter);
+
+            allContent.forEach((content) => {
+                if (filter === "content") {
+                    content.style.display = "block"
+                } else if (content.classList.contains(filter)) {
+                    content.style.display = "block"
+                } else {
+                    content.style.display = "none"
+                }
+            })
+        });
+    }
+}
+
+// SMOOTH SCROLL FOR MOBILE AND TABLET
+if (window.innerWidth < 850) {
+    links = document.querySelectorAll(".nav-li a");
+
+    for (const link of links) {
+        link.addEventListener("click", smoothScroll);
+    }
+
+    function smoothScroll(e) {
         e.preventDefault();
+        const href = this.getAttribute("href");
 
-        const filter = e.target.dataset.filter;
-        console.log(filter);
-
-        allContent.forEach((content) => {
-        if (filter === "content") {
-            content.style.display = "block"
-        } else if (content.classList.contains(filter)) {
-            content.style.display = "block"
-        } else {
-            content.style.display = "none"
-        }
-
-        })
-    });
+        document.querySelector(href).scrollIntoView({
+            behavior: "smooth"
+        });
+    }
 }
 
 // TEXT EFFECT
 // TEXT ARRAY
-const dataText = ["Web Developer", "Ninja", "Retired Avenger", "Dad"];
+const dataText = ["Web Developer", "Ninja", "Retired Avenger", "Jr Hashira"];
 document.addEventListener("DOMContentLoaded", typingEffect);
 
 function typingEffect() {
