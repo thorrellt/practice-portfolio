@@ -255,7 +255,7 @@ span.effect {
 /* ABOUT SECTION */
 /* ABOUT SECTION */
 .content-about {
-    background: url(/images/3.jpg) no-repeat center/cover;
+    background: url(images/3.jpg) no-repeat center/cover;
     position: relative;
     z-index: -1; 
 }
