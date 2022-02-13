@@ -258,10 +258,14 @@ span.effect {
 /* ABOUT SECTION */
 /* ABOUT SECTION */
 .content-about {
+<<<<<<< HEAD
     background: url(images/about-bg-transparent.png), #1A2238;
     background-repeat: no-repeat, no-repeat;
     background-position: center, center;
     background-size: cover;
+=======
+    background: url(images/3.jpg) no-repeat center/cover;
+>>>>>>> 90c5bf07f7b120f29efb4d7d4faf02cf18644488
     position: relative;
     z-index: -1;
 }
