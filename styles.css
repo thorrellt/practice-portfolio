@@ -1,28 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap');
 
 
 :root {
-    --white: #fff;
     --black: #4f524f;
-    --blue: #31326f;
     --light-blue: #04B4E0;
     --color-primary: #9d0191;
     --color-sec: #db6400;
     --color-grey: #eee;
     --very-dark: #363836;
-    --orange: #ffb640;
     
  
     --white: #ffffff;
-    --pale-blue: #d6f0ee;
+    --pale-blue: #E9F6F6;
     --light-blue: #90d3cb;
     --fair-blue: #5BC5C4;
     --blue: #006ca2;
     --dark-blue: #17324e;
     --pale-yellow: #fff5ca;
+    --light-peach: #FFCEB3;
     --peach-orange: #ffac9a;
     --orange: #ff7756;
-    --red: #ff5263;
+    --light-red: #FF6675;
+    --dark-red: #E00016;
 
 }
 
@@ -37,9 +37,10 @@ html {
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     padding: 2rem;
-    background: linear-gradient(to right bottom, #dfa60c, #9d0191);
+    background: rgb(144,211,203);
+    background: linear-gradient(337deg, rgba(144,211,203,1) 0%, rgba(91,197,196,1) 36%, rgba(0,108,162,1) 100%);
     background-repeat: no-repeat;
     height: 100vh;
     margin: 0 auto;
@@ -52,7 +53,7 @@ body {
 p {
     font-size: 1.6rem;
     line-height: 1.5;
-    color: var(--black);
+    color: var(--dark-blue);
 }
 
 img {
@@ -74,7 +75,7 @@ img {
 
 /* NAV BAR */
 nav{
-    background-color: #fff;
+    background-color: var(--pale-blue);
     margin: 2rem 1rem 0 0;
     border-radius: 3px;
 }
@@ -93,14 +94,14 @@ nav ul li{
 }
 
 nav ul li:not(:last-child){
-    border-bottom:1px solid #eee;
+    border-bottom:1px solid var(--white);
 }
 
 nav li a i {
     display: flex;
     width: 100%;
     font-size: 1.6rem;
-    color: var(--black);
+    color: var(--blue);
     padding-bottom: 5px;
     justify-content: center;
 }
@@ -112,16 +113,16 @@ nav li a {
     font-size: 1.2 rem;
     text-decoration: none;
     font-weight: 600;
-    color: var (--black);
+    color: var (var(--blue));
     text-align: center;
 }
 
 nav li a:hover{
-    color: var(--color-primary);
+    color: var(--dark-red);
 }
 
 .active * {
-    color: var(--color-primary);
+    color: var(--dark-red);
 }
 
 
@@ -155,7 +156,7 @@ nav li a:hover{
 .profile-content h2 {
     font-size: 4rem;
     font-weight: 500;
-    color: var(--black);
+    color: var(--dark-blue);
 }
 
 profile-content p.text-effect {
@@ -275,7 +276,7 @@ span.effect {
 /* ABOUT SECTION */
 /* ABOUT SECTION */
 .content-about {
-    background: url(images/about-bg-transparent.png), #1A2238;
+    background: url(images/about-bg-transparent.png), var(--dark-blue);
     background-repeat: no-repeat, no-repeat;
     background-position: center, center;
     background-size: cover;
@@ -288,7 +289,7 @@ span.effect {
     top: 0;
     width: 100%;
     height: 100%;
-    background: url(images/about-bg-transparent.png), #1A2238;
+    background: url(images/about-bg-transparent.png), var(--dark-blue);
     background-repeat: no-repeat, no-repeat;
     background-position: center, center;
     filter: blur(3rem);
@@ -312,23 +313,23 @@ span.effect {
 }
 
 .content-about .content-header {
-    border-bottom: 1px solid rgba(255,255,255,.3);
+    border-bottom: 1px solid var(--peach-orange);
     padding: 1.7rem 0;
 }
 
 .content-header h2 {
     font-size: 2.5rem;
     line-height: .5;
-    color: var(--black);
+    color: var(--dark-blue);
     z-index: 1;
 }
 
 .content-about .content-header h2 {
-    color: #eee;
+    color: var(--pale-yellow)
 }
 
 .content-header h2 span{
-    color: var(--color-primary);
+    color: var(--light-red);
 }
 
 .content-details {
@@ -347,16 +348,16 @@ span.effect {
 }
 
 .content-about .content-details img{
-    width: 12rem;
-    height: 12rem;
+    width: 15rem;
+    height: 15rem;
     border-radius: 36% 64% 71% 29% / 52% 47% 53% 48%;
-    border: 2px solid #eee;
+    border: 3px solid var(--orange);
     margin-bottom: 1rem;
 }
 
 .content-about .content-details p {
-    color: #fff;
-    font-weight: 300;
+    color: var(--pale-yellow);
+    font-weight: 400;
 }
 
 .content-about .content-details p span.text {
@@ -364,7 +365,7 @@ span.effect {
 }
 
 .content-about .content-details p span.name {
-    color: var(--orange);
+    color: var(--light-red);
     font-size: 2rem;
     font-weight: 700;
 }
