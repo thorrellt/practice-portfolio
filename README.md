@@ -13,6 +13,15 @@ Welcome to my Web Developer Portfolio. This is written in HTML, CSS & JS. This p
 
 **Responsive Design:** This project used media queries to approach how the page is displayed on varying screen sizes. A lot was gained by viewing how these attributes altered the appearance and layout of the page.
 
+## If I Revisited This Project, 
+#### I Would...
+
+-   Replace some of the existing code with more semantic HTML. The number of div tags can be reduced by using more appropriate & descriptive tags.
+
+-   Convert to CSS to SASS to improve the readability & modularity of the code, in addition to removing any redundancies in the naming conventions.
+
+-   Run the HTML & CSS through W3C’s Validators to check for any syntactical errors.
+
 ## Credits
 
 This project was built as part of a project based learning lesson from [  
