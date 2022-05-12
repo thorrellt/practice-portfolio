@@ -16,11 +16,11 @@ Welcome to my Web Developer Portfolio. This is written in HTML, CSS & JS. This p
 ## If I Revisited This Project, 
 #### I Would...
 
--   Replace some of the existing code with more semantic HTML. The number of div tags can be reduced by using more appropriate & descriptive tags.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;..replace some of the existing code with more semantic HTML. The number of div tags can be reduced by using more appropriate & descriptive tags.
 
--   Convert to CSS to SASS to improve the readability & modularity of the code, in addition to removing any redundancies in the naming conventions.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;..convert to CSS to SASS to improve the readability & modularity of the code, in addition to removing any redundancies in the naming conventions.
 
--   Run the HTML & CSS through W3C’s Validators to check for any syntactical errors.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;..run the HTML & CSS through W3C’s Validators to check for any syntactical errors.
 
 ## Credits
 
