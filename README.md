@@ -1,5 +1,3 @@
-My personal Portfolio [thorrellt.com](https://thorrellt.github.io/practice-portfolio/)
-
 # Web Dev Portfolio
 
 Welcome to my Web Developer Portfolio. This is written in HTML, CSS & JS. This project I undertook in order to strengthen my understanding of code structure & use, and how to build a responsive layout. In the end, it ultimately became a sandbox for me to experiment & create in.
@@ -24,5 +22,4 @@ Welcome to my Web Developer Portfolio. This is written in HTML, CSS & JS. This p
 
 ## Credits
 
-This project was built as part of a project based learning lesson from [  
-ZinoTrust Academy.](https://www.youtube.com/watch?v=Dl2mqs1mfZo)
+This project was built as part of a project based learning lesson from [ZinoTrust Academy.](https://www.youtube.com/watch?v=Dl2mqs1mfZo)
