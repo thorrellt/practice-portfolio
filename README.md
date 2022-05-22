@@ -1,6 +1,8 @@
 # Web Dev Portfolio
 
-Welcome to my Web Developer Portfolio. This is written in HTML, CSS & JS. This project I undertook in order to strengthen my understanding of code structure & use, and how to build a responsive layout. In the end, it ultimately became a sandbox for me to experiment & create in.
+Welcome to my Web Developer Portfolio. This is written in HTML, CSS & JS. This project I undertook in order to strengthen my understanding of code structure & use, and how to build a responsive layout. In the end, it ultimately became a sandbox for me to experiment & create in.  
+  
+Live Site: <a href="https://thorrellt.github.io/web-dev-portfolio/" class="repo" target="_blank" rel="noopener noreferrer">thorrellt.github.io/web-dev-portfolio/</a>
 
 ![portfolio-tour](https://user-images.githubusercontent.com/64343445/165014072-d4af5deb-0db8-4d01-aa82-8ad41d04dddb.gif)
 
