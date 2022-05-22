@@ -1,3 +1,7 @@
+<div align="center"> 
+	<img src="https://user-images.githubusercontent.com/64343445/169721268-9ffae8eb-b2b0-41b9-b700-487c21732b6d.jpeg" width= "1000">
+</div> 
+
 # Web Dev Portfolio
 
 Welcome to my Web Developer Portfolio. This is written in HTML, CSS & JS. This project I undertook in order to strengthen my understanding of code structure & use, and how to build a responsive layout. In the end, it ultimately became a sandbox for me to experiment & create in.  
